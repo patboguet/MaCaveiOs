@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "ListeVinsViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    ListeVinsViewController *listeVins = [[ListeVinsViewController alloc] initWithNibName:@"ListeVinsViewController" bundle:nil];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:listeVins];
+    
+    self.window.rootViewController = nav;
+    
     return YES;
 }
 
