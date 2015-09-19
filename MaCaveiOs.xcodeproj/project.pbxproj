@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99A315D21BAD98C500E5465C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A315D11BAD98C500E5465C /* main.m */; };
+		99A315D51BAD98C500E5465C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A315D41BAD98C500E5465C /* AppDelegate.m */; };
+		99A315D81BAD98C500E5465C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A315D71BAD98C500E5465C /* ViewController.m */; };
+		99A315DB1BAD98C500E5465C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A315D91BAD98C500E5465C /* Main.storyboard */; };
+		99A315DD1BAD98C500E5465C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99A315DC1BAD98C500E5465C /* Images.xcassets */; };
+		99A315E01BAD98C500E5465C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A315DE1BAD98C500E5465C /* LaunchScreen.xib */; };
+		99A315EC1BAD98C500E5465C /* MaCaveiOsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A315EB1BAD98C500E5465C /* MaCaveiOsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99A315E61BAD98C500E5465C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99A315C41BAD98C500E5465C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99A315CB1BAD98C500E5465C;
+			remoteInfo = MaCaveiOs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		99A315CC1BAD98C500E5465C /* MaCaveiOs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaCaveiOs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99A315D01BAD98C500E5465C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99A315D11BAD98C500E5465C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		99A315D31BAD98C500E5465C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		99A315D41BAD98C500E5465C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		99A315D61BAD98C500E5465C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		99A315D71BAD98C500E5465C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		99A315DA1BAD98C500E5465C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		99A315DC1BAD98C500E5465C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		99A315DF1BAD98C500E5465C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		99A315E51BAD98C500E5465C /* MaCaveiOsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaCaveiOsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99A315EA1BAD98C500E5465C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99A315EB1BAD98C500E5465C /* MaCaveiOsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaCaveiOsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99A315C91BAD98C500E5465C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A315E21BAD98C500E5465C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99A315C31BAD98C500E5465C = {
+			isa = PBXGroup;
+			children = (
+				99A315CE1BAD98C500E5465C /* MaCaveiOs */,
+				99A315E81BAD98C500E5465C /* MaCaveiOsTests */,
+				99A315CD1BAD98C500E5465C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99A315CD1BAD98C500E5465C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99A315CC1BAD98C500E5465C /* MaCaveiOs.app */,
+				99A315E51BAD98C500E5465C /* MaCaveiOsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99A315CE1BAD98C500E5465C /* MaCaveiOs */ = {
+			isa = PBXGroup;
+			children = (
+				99A315D31BAD98C500E5465C /* AppDelegate.h */,
+				99A315D41BAD98C500E5465C /* AppDelegate.m */,
+				99A315D61BAD98C500E5465C /* ViewController.h */,
+				99A315D71BAD98C500E5465C /* ViewController.m */,
+				99A315D91BAD98C500E5465C /* Main.storyboard */,
+				99A315DC1BAD98C500E5465C /* Images.xcassets */,
+				99A315DE1BAD98C500E5465C /* LaunchScreen.xib */,
+				99A315CF1BAD98C500E5465C /* Supporting Files */,
+			);
+			path = MaCaveiOs;
+			sourceTree = "<group>";
+		};
+		99A315CF1BAD98C500E5465C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				99A315D01BAD98C500E5465C /* Info.plist */,
+				99A315D11BAD98C500E5465C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		99A315E81BAD98C500E5465C /* MaCaveiOsTests */ = {
+			isa = PBXGroup;
+			children = (
+				99A315EB1BAD98C500E5465C /* MaCaveiOsTests.m */,
+				99A315E91BAD98C500E5465C /* Supporting Files */,
+			);
+			path = MaCaveiOsTests;
+			sourceTree = "<group>";
+		};
+		99A315E91BAD98C500E5465C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				99A315EA1BAD98C500E5465C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99A315CB1BAD98C500E5465C /* MaCaveiOs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99A315EF1BAD98C500E5465C /* Build configuration list for PBXNativeTarget "MaCaveiOs" */;
+			buildPhases = (
+				99A315C81BAD98C500E5465C /* Sources */,
+				99A315C91BAD98C500E5465C /* Frameworks */,
+				99A315CA1BAD98C500E5465C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaCaveiOs;
+			productName = MaCaveiOs;
+			productReference = 99A315CC1BAD98C500E5465C /* MaCaveiOs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99A315E41BAD98C500E5465C /* MaCaveiOsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99A315F21BAD98C500E5465C /* Build configuration list for PBXNativeTarget "MaCaveiOsTests" */;
+			buildPhases = (
+				99A315E11BAD98C500E5465C /* Sources */,
+				99A315E21BAD98C500E5465C /* Frameworks */,
+				99A315E31BAD98C500E5465C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99A315E71BAD98C500E5465C /* PBXTargetDependency */,
+			);
+			name = MaCaveiOsTests;
+			productName = MaCaveiOsTests;
+			productReference = 99A315E51BAD98C500E5465C /* MaCaveiOsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99A315C41BAD98C500E5465C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Patrick Boguet";
+				TargetAttributes = {
+					99A315CB1BAD98C500E5465C = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					99A315E41BAD98C500E5465C = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 99A315CB1BAD98C500E5465C;
+					};
+				};
+			};
+			buildConfigurationList = 99A315C71BAD98C500E5465C /* Build configuration list for PBXProject "MaCaveiOs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99A315C31BAD98C500E5465C;
+			productRefGroup = 99A315CD1BAD98C500E5465C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99A315CB1BAD98C500E5465C /* MaCaveiOs */,
+				99A315E41BAD98C500E5465C /* MaCaveiOsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99A315CA1BAD98C500E5465C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99A315DB1BAD98C500E5465C /* Main.storyboard in Resources */,
+				99A315E01BAD98C500E5465C /* LaunchScreen.xib in Resources */,
+				99A315DD1BAD98C500E5465C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A315E31BAD98C500E5465C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99A315C81BAD98C500E5465C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99A315D81BAD98C500E5465C /* ViewController.m in Sources */,
+				99A315D51BAD98C500E5465C /* AppDelegate.m in Sources */,
+				99A315D21BAD98C500E5465C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A315E11BAD98C500E5465C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99A315EC1BAD98C500E5465C /* MaCaveiOsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99A315E71BAD98C500E5465C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99A315CB1BAD98C500E5465C /* MaCaveiOs */;
+			targetProxy = 99A315E61BAD98C500E5465C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		99A315D91BAD98C500E5465C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99A315DA1BAD98C500E5465C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		99A315DE1BAD98C500E5465C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99A315DF1BAD98C500E5465C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		99A315ED1BAD98C500E5465C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		99A315EE1BAD98C500E5465C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99A315F01BAD98C500E5465C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MaCaveiOs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		99A315F11BAD98C500E5465C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MaCaveiOs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		99A315F31BAD98C500E5465C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MaCaveiOsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaCaveiOs.app/MaCaveiOs";
+			};
+			name = Debug;
+		};
+		99A315F41BAD98C500E5465C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MaCaveiOsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaCaveiOs.app/MaCaveiOs";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99A315C71BAD98C500E5465C /* Build configuration list for PBXProject "MaCaveiOs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99A315ED1BAD98C500E5465C /* Debug */,
+				99A315EE1BAD98C500E5465C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99A315EF1BAD98C500E5465C /* Build configuration list for PBXNativeTarget "MaCaveiOs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99A315F01BAD98C500E5465C /* Debug */,
+				99A315F11BAD98C500E5465C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		99A315F21BAD98C500E5465C /* Build configuration list for PBXNativeTarget "MaCaveiOsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99A315F31BAD98C500E5465C /* Debug */,
+				99A315F41BAD98C500E5465C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99A315C41BAD98C500E5465C /* Project object */;
+}
