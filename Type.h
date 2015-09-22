@@ -13,6 +13,6 @@
 @property NSInteger *idType;
 @property NSString *nom;
 
--(NSString*) getNomType:(NSInteger)idType;
+//-(NSString*) getNomType:(NSInteger)idType;
 
 @end

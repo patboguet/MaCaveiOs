@@ -13,6 +13,6 @@
 @property NSInteger *idLieu;
 @property NSString *nom;
 
--(NSString*) getNomLieuAchat:(NSInteger)idLieu;
+//-(NSString*) getNomLieuAchat:(NSInteger)idLieu;
 
 @end

@@ -12,7 +12,7 @@
 @implementation Type
 
 @synthesize idType,nom;
-
+/*
 -(NSString*) getNomType:(NSInteger)idT
 {
     // l'id du vin ne correspond pas à l'index du tableau qui commence à 0
@@ -20,5 +20,5 @@
     
     return type;
 }
-
+*/
 @end

@@ -14,7 +14,7 @@
 @property NSInteger *idRegion;
 @property NSString *nom;
 
--(NSString*) getNomRegion:(NSInteger)idRegion;
+//-(NSString*) getNomRegion:(NSInteger)idRegion;
 
 
 @end

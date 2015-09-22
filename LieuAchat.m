@@ -12,12 +12,12 @@
 @implementation LieuAchat
 
 @synthesize idLieu,nom;
-
+/*
 -(NSString*) getNomLieuAchat:(NSInteger)idL
 {
     NSString *lieu = [[ListeVinsViewController alloc].lieuxAchat objectAtIndex:idL-1];
     
     return lieu;
 }
-
+*/
 @end

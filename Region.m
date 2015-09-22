@@ -13,7 +13,7 @@
 
 @synthesize idRegion,nom;
 
-- (NSString*) getNomRegion:(NSInteger)idR
+/*- (NSString*) getNomRegion:(NSInteger)idR
 {
     ListeVinsViewController *LVVC = [[ListeVinsViewController alloc]init];
     
@@ -23,6 +23,6 @@
     NSString *region = reg.nom;
     
     return region;
-}
+}*/
 
 @end

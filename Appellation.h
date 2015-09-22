@@ -13,6 +13,6 @@
 @property NSInteger *idAppellation;
 @property NSString *nom;
 
--(NSString*) getNomAppellation:(NSInteger)idAoc;
+//-(NSString*) getNomAppellation:(NSInteger)idAoc;
 
 @end

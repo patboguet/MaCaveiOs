@@ -24,8 +24,8 @@
 {
     _nomVin.text = vin.nom;
     _region.text = vin.region;
-    _annee.text = [NSString stringWithFormat:@"%d", vin.annee];
-    _nbBouteilles.text = [NSString stringWithFormat:@"%d", vin.nbBouteilles];
+    _annee.text = [NSString stringWithFormat:@"%d", (int)vin.annee];
+    _nbBouteilles.text = [NSString stringWithFormat:@"%d", (int)vin.nbBouteilles];
     UIImage *image = [[UIImage alloc]init];
     if(vin.favori)
     {

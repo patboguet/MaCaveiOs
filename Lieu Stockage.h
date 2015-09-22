@@ -13,6 +13,6 @@
 @property NSInteger *idLieu;
 @property NSString *nom;
 
--(NSString*) getNomLieuStockage:(NSInteger)idLieu;
+//-(NSString*) getNomLieuStockage:(NSInteger)idLieu;
 
 @end

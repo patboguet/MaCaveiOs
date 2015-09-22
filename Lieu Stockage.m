@@ -12,12 +12,12 @@
 @implementation Lieu_Stockage
 
 @synthesize idLieu,nom;
-
+/*
 -(NSString*) getNomLieuStockage:(NSInteger)idL
 {
     NSString *lieu = [[ListeVinsViewController alloc].lieuxStockage objectAtIndex:idL-1];
     
     return lieu;
 }
-
+*/
 @end

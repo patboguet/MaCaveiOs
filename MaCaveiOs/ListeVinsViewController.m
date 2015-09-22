@@ -53,7 +53,6 @@
 }
 
 #pragma mark - Table view data source
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
     return 1;
@@ -95,7 +94,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 140;
+    return 130;
 }
 
 /*
@@ -159,8 +158,6 @@
     for (NSDictionary *item in jsonArray) {
         Vin *vin = [[Vin alloc] init];
         
-        NSLog(@"Vin %@",item);
-        
         NSInteger *idVin = (NSInteger*)[[item objectForKey:@"FK_vin"] integerValue];
         NSInteger *annee = (NSInteger*)[[item objectForKey:@"annee"] integerValue];
         NSString *region = [item objectForKey:@"FK_region"];
@@ -172,8 +169,18 @@
         NSString *note = [item objectForKey:@"note"];
         NSInteger *nbBt = (NSInteger*)[[item objectForKey:@"nb_bouteilles"] integerValue];
         NSString *prix = [item objectForKey:@"prix_achat"];
-        Boolean *suivi = (Boolean*)[[item objectForKey:@"suivi_stock"] boolValue];
-        Boolean *favori = (Boolean*)[[item objectForKey:@"meilleur_vin"] boolValue];
+        NSString *suivi_stock = [item objectForKey:@"suivi_stock"];
+        Boolean suivi = false;
+        if([suivi_stock isEqualToString:@"1"])
+        {
+            suivi = true;
+        }
+        NSString *meilleur_vin = [item objectForKey:@"meilleur_vin"];
+        Boolean favori = false;
+        if([meilleur_vin isEqualToString:@"1"])
+        {
+            favori = true;
+        }
         NSString *offert = [item objectForKey:@"offert_par"];
         NSString *commentaires = [item objectForKey:@"commentaires"];
         
@@ -190,11 +197,11 @@
             vin.appellation = nil;
         }
         else {
-            NSString *aoc = [[Appellation alloc] getNomAppellation:[appellation integerValue]];
+            NSString *aoc = [self getNomAppellation:[appellation integerValue]];
             vin.appellation = aoc;
         }
         
-        NSString *t = [[Type alloc] getNomType:[type integerValue]];
+        NSString *t = [self getNomType:[type integerValue]];
         vin.type = t;
         
         if([[NSNull null] isEqual:degre])
@@ -207,6 +214,7 @@
         
         NSDateFormatter *df = [[NSDateFormatter alloc] init];
         [df setDateFormat:@"yyyy-MM-dd"];
+        [df setTimeZone: [NSTimeZone timeZoneWithAbbreviation: @"GMT"]];
         
         if([[NSNull null] isEqual:consoAvant])
         {
@@ -233,8 +241,8 @@
         }
         
         vin.nbBouteilles = nbBt;
-        vin.suivi = suivi;
-        vin.favori = favori;
+        vin.suivi = &suivi;
+        vin.favori = &favori;
         if([[NSNull null] isEqual:prix])
         {
             vin.prix = nil;
@@ -249,12 +257,24 @@
         else {
             vin.offert = offert;
         }
+
+        NSString *lieuAchat = [item objectForKey:@"FK_lieu_achat"];
+        if([[NSNull null] isEqual:lieuAchat])
+        {
+            vin.lieuAchat = nil;
+        }
+        else {
+            vin.lieuAchat = [self getNomLieuAchat:[lieuAchat integerValue]];
+        }
         
-        NSString *lieuAchat = [[LieuAchat alloc] getNomLieuAchat:[[item objectForKey:@"FK_lieu_achat"] integerValue]];
-        vin.lieuAchat = lieuAchat;
-        
-        NSString *lieuStockage = [[Lieu_Stockage alloc] getNomLieuStockage:[[item objectForKey:@"FK_lieu_stockage"] integerValue]];
-        vin.lieuStockage = lieuStockage;
+        NSString *lieuStockage = [item objectForKey:@"FK_lieu_stockage"];
+        if([[NSNull null] isEqual:lieuStockage])
+        {
+            vin.lieuStockage = nil;
+        }
+        else {
+            vin.lieuStockage = [self getNomLieuStockage:[lieuStockage integerValue]];
+        }
         
         if([[NSNull null] isEqual:commentaires])
         {
@@ -265,9 +285,7 @@
         }
         
         [self.vins addObject:vin];
-        
     }
-    //[self.tableView reloadData];
 }
 
 - (void) loadRegions;
@@ -290,8 +308,6 @@
     
         [regions addObject:region];
     }
-    //[self.tableView reloadData];
-
 }
 
 -(void) loadAppellations;
@@ -314,8 +330,6 @@
         
         [appellations addObject:aoc];
     }
-    //[self.tableView reloadData];
-
 }
 
 -(void) loadLieuxAchat;
@@ -338,8 +352,8 @@
         
         [lieuxAchat addObject:lieu];
     }
-    //[self.tableView reloadData];
 }
+
 -(void) loadLieuxStockage;
 {
     NSString *urlString = @"http://www.macaveonline.fr/webservice/webservice_select_lieu_stockage.php?idUtilisateur=3";
@@ -360,7 +374,6 @@
         
         [lieuxStockage addObject:lieu];
     }
-    //[self.tableView reloadData];
 }
 
 -(NSString*)getNomRegion:(NSInteger)idR
@@ -373,7 +386,34 @@
 
 }
 
+-(NSString*) getNomAppellation:(NSInteger)idAoc
+{
+    NSString *aoc = [[[ListeVinsViewController alloc]init].appellations objectAtIndex:idAoc-1];
+    
+    return aoc;
+}
 
+-(NSString*) getNomType:(NSInteger)idT
+{
+    // l'id du vin ne correspond pas à l'index du tableau qui commence à 0
+    NSString *type = [[ListeVinsViewController alloc].types objectAtIndex:idT-1];
+    
+    return type;
+}
+
+-(NSString*) getNomLieuAchat:(NSInteger)idL
+{
+    NSString *lieu = [[ListeVinsViewController alloc].lieuxAchat objectAtIndex:idL-1];
+    
+    return lieu;
+}
+
+-(NSString*) getNomLieuStockage:(NSInteger)idL
+{
+    NSString *lieu = [[ListeVinsViewController alloc].lieuxStockage objectAtIndex:idL-1];
+    
+    return lieu;
+}
 
 
 /*

@@ -13,11 +13,11 @@
 
 @synthesize idAppellation,nom;
 
--(NSString*) getNomAppellation:(NSInteger)idAoc
+/*-(NSString*) getNomAppellation:(NSInteger)idAoc
 {
     NSString *aoc = [[[ListeVinsViewController alloc]init].appellations objectAtIndex:idAoc-1];
     
     return aoc;
-}
+}*/
 
 @end
