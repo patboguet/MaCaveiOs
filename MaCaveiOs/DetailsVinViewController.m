@@ -33,8 +33,8 @@
     NSInteger note = (int)vin.note;
     [self.noteVin setValue:(float)note animated:true];
     self.nbBtVin.text = [NSString stringWithFormat:@"%02d",(int)vin.nbBouteilles];
-    [self.suiviVin setOn:true animated:true];
-    [self.favoriVin setOn:true animated:true];
+    [self.suiviVin setOn:vin.suivi animated:true];
+    [self.favoriVin setOn:vin.favori animated:true];
     self.prixVin.text = vin.prix;
     self.offertVin.text = vin.offert;
     self.lieuAchatVin.text = vin.lieuAchat;

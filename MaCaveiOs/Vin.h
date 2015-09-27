@@ -22,8 +22,8 @@
 @property NSDate *consoAvant;
 @property NSInteger *note;
 @property NSInteger *nbBouteilles;
-@property Boolean *suivi;
-@property Boolean *favori;
+@property BOOL *suivi;
+@property BOOL *favori;
 @property NSString *prix;
 @property NSString *offert;
 @property NSString *lieuAchat;

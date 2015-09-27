@@ -170,17 +170,7 @@
         NSInteger *nbBt = (NSInteger*)[[item objectForKey:@"nb_bouteilles"] integerValue];
         NSString *prix = [item objectForKey:@"prix_achat"];
         NSString *suivi_stock = [item objectForKey:@"suivi_stock"];
-        Boolean suivi = false;
-        if([suivi_stock isEqualToString:@"1"])
-        {
-            suivi = true;
-        }
         NSString *meilleur_vin = [item objectForKey:@"meilleur_vin"];
-        Boolean favori = false;
-        if([meilleur_vin isEqualToString:@"1"])
-        {
-            favori = true;
-        }
         NSString *offert = [item objectForKey:@"offert_par"];
         NSString *commentaires = [item objectForKey:@"commentaires"];
         
@@ -241,8 +231,10 @@
         }
         
         vin.nbBouteilles = nbBt;
-        vin.suivi = &suivi;
-        vin.favori = &favori;
+        BOOL suivi = [suivi_stock boolValue];
+        vin.suivi = &(suivi);
+        BOOL favori =[meilleur_vin boolValue];
+        vin.favori = &(favori);
         if([[NSNull null] isEqual:prix])
         {
             vin.prix = nil;
@@ -285,6 +277,8 @@
         }
         
         [self.vins addObject:vin];
+        
+        [self.tableView reloadData];
     }
 }
 
